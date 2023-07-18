@@ -4,6 +4,7 @@ let playerAP = 100
 let fungusHP = 100
 
 
+
 // State Variables can be declared outside of the onReady
 // Feel free to make this to what you want!
 // Example:
@@ -17,6 +18,7 @@ function onReady() {
     $('.dragon-blade').on('click', dragonBlade);
     $('.star-fire').on('click', starFire);
     
+    setInterval(fungusHealthGain, 1000)
     // Make sure you check the index.html file! 
     // There are lots of buttons and things ready for you to hook into here!
     
@@ -27,6 +29,12 @@ function onReady() {
     // - Rendered to the DOM
 }
 
+function fungusHealthGain() {
+    if (fungusHP < 50) {
+        fungusHP += 1;
+        render();
+    }
+}
 
 function arcaneScepter(event){
     event.preventDefault()
