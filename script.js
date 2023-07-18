@@ -30,7 +30,7 @@ function onReady() {
 }
 
 function fungusHealthGain() {
-    if (fungusHP < 50) {
+    if (fungusHP < 50 && fungusHP > 0) {
         fungusHP += 1;
         render();
     }
