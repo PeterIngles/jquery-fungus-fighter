@@ -69,6 +69,10 @@ function render(){
         playerAP = 0
         console.log('player out of AP')
         $('.freaky-fungus').toggleClass("walk jump")
+        $('.arcane-scepter').prop('disabled', true)
+        $('.entangle').prop('disabled', true)
+        $('.dragon-blade').prop('disabled', true)
+        $('.star-fire').prop('disabled', true)
         // disable all buttons
     }
     if (fungusHP <= 0){
