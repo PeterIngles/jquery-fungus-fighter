@@ -90,9 +90,9 @@ function render(){
     }
     $('.ap-text').empty()
     $('#ap-meter').val(playerAP)
-    $('.ap-text').text(playerAP)
+    $('.ap-text').text(playerAP + ' AP')
     
     $('.hp-text').empty()
     $('#hp-meter').val(fungusHP)
-    $('.hp-text').text(fungusHP)
+    $('.hp-text').text(fungusHP + ' HP')
 }
